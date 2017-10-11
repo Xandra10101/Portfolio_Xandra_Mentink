@@ -1,9 +1,12 @@
-woord = input('Geef hier een woord op: ')
-while woord == 4:
-    if woord == 4:
+
+while True:
+    woord = input('Geef hier een woord op: ')
+    if len(woord) == 4:
+        print('Inlezen van een correcte string: {} is geslaagd'. format(woord))
         break
-    print()
-    print('Voer een nieuw woord in: ')
+    else:
+        print('{} heeft {} letters'.format(woord, len(woord)))
+
 
 
 
